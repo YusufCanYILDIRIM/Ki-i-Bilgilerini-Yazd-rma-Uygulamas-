@@ -1,0 +1,1 @@
+# Ki-i-Bilgilerini-Yazd-rma-Uygulamas-
