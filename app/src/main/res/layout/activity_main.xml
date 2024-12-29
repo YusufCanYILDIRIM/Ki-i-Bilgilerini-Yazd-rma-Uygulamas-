@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:hint="Adınızı Giriniz"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editTextLastName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="213dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="201dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="148dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="29dp"
+        android:text="Göster"
+        app:layout_constraintBottom_toTopOf="@+id/txtView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxFemale" />
+
+    <CheckBox
+        android:id="@+id/checkBoxFemale"
+        android:layout_width="88dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="41dp"
+        android:text="Kadın"
+        app:layout_constraintBottom_toTopOf="@+id/btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxMale"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLastName" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMale"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="45dp"
+        android:text="Erkek"
+        app:layout_constraintBottom_toTopOf="@+id/btn"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxFemale"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLastName"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="Soyadınızı giriniz"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxFemale"
+        app:layout_constraintStart_toStartOf="@+id/editTextFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFirstName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
